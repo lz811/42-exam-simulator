@@ -1,0 +1,77 @@
+Assignment name: mini_db
+Expected files : *. cpp *. hpp
+-----------------------------------------------------------------
+
+Write a program that takes as an argument a port and a path.
+Your program must listen for clients to connect on 127.0.0.1 on the given port.
+
+When your program is ready to accept incoming connections, it will print "ready\n" on
+the standard output.
+
+Your program will receive commands from the connected clients and will maintain a
+database of key-values.
+
+The connections are persistent, which means that a program can send multiple
+commands in a single session.
+
+The commands are the following:
+
+POST:
+synopsis:		POST <key> <value>
+description:	add an entry to the db
+return value:	"0"
+
+GET:
+synopsis:		GET <key>
+description:	retrieve an entry from the db
+return value:	"0 <value>" or "1" if the key does not exist
+
+DELETE:
+synopsis:		DELETE <key>
+description:	erase an entry in the db
+return value:	return "0" if the key was successfully erased or "1" if the key does not exist
+
+If a command is not recognized your program must respond "2".
+
+Keys and values will be of arbitrary size and will not contain any white spaces,
+but the size of a request will never exceed 1000 characters.
+
+Your program must be efficient.
+
+Data persistence:
+
+When your program receives the SIGINT signal, it must save the current database (i.e. all the
+key-value pairs) to the file path given as an argument and exit.
+
+Each time your program starts, it will look for the presence of this file
+and load it.
+
+Hint: you can use nc to test your program.
+
+You will find in this directory a file containing some network code in case you
+have forgotten how it works.
+
+Example:
+
+$> ./mini_db 1111 .save &
+$> nc localhost 1111 | cat -e
+POST A B
+O$
+POST B C
+0$
+GET A
+0 B$
+GET C
+1$
+DELETE A
+O$
+DELETE C
+1$
+UNKNOWN_COMMAND
+2$
+^C
+$> pkill -SIGINT mini_db
+$> ./mini_db 1111 .save &
+$> echo "GET B" | nc localhost 1111 | cat -e
+0 C$
+S>

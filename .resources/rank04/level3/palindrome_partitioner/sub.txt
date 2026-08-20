@@ -1,0 +1,35 @@
+Assignment name  : palindrome_partitioner
+Expected files   : palindrome_partitioner.py
+Allowed functions: standard Python built-ins only
+--------------------------------------------------------------------------------------
+
+Write a function:
+
+def palindrome_partitioner(s: str) -> int
+
+A partition of "s" splits it into consecutive, non-overlapping pieces
+that together cover the whole string. A partition is "palindromic" when
+every piece it produces is itself a palindrome.
+
+The function must return the minimum number of cuts needed to split "s"
+into a palindromic partition (a cut is what separates two adjacent
+pieces, so splitting a string into k pieces costs k - 1 cuts).
+
+An empty string requires 0 cuts.
+
+For example:
+
+palindrome_partitioner("aab")
+-> 1                      # "aa" | "b"
+
+palindrome_partitioner("a")
+-> 0
+
+palindrome_partitioner("racecar")
+-> 0                      # already a palindrome
+
+palindrome_partitioner("ab")
+-> 1                      # "a" | "b"
+
+palindrome_partitioner("")
+-> 0

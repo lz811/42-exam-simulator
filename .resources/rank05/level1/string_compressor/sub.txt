@@ -1,0 +1,29 @@
+Assignment name: string_compressor
+Expected files: string_compressor.py
+Allowed functions: standard Python built-ins only
+--------------------------------------------------------------------------------
+
+Write two functions in the same file: compress(s: str) -> str and decompress(s: str) -> str, implementing a simple run-length encoding scheme.
+
+compress replaces every run of one or more identical consecutive characters with the character followed by the run's length, but only when the run length is greater than 1 (a run of exactly one character is written as just that character, with no trailing 1). decompress must reverse this exactly: for every character followed by an optional run of digits, it repeats the character that many times (or once, if no digits follow). For any input string x, decompress(compress(x)) must return x unchanged. An empty string compresses and decompresses to an empty string.
+
+For example:
+
+compress("aaabbbccd")
+-> "a3b3c2d"
+
+compress("abcdef")
+-> "abcdef"
+
+compress("aaaaaaaaaa")
+-> "a10"
+
+compress("")
+-> ""
+
+decompress("a3b3c2d")
+-> "aaabbbccd"
+
+decompress("a10")
+-> "aaaaaaaaaa"
+

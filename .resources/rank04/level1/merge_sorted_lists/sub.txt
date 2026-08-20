@@ -1,0 +1,23 @@
+Assignment name  : merge_sorted_lists
+Expected files   : merge_sorted_lists.py
+Allowed functions: standard Python built-ins only
+--------------------------------------------------------------------------------------
+
+Write a function:
+
+def merge_sorted_lists(lists: list[list[int]]) -> list[int]
+
+The function must take a list of lists of integers and return a single
+list containing every value from every inner list, sorted in ascending
+order. The inner lists are not guaranteed to already be sorted.
+
+For example:
+
+merge_sorted_lists([[1, 3, 5], [2, 4, 6]])
+-> [1, 2, 3, 4, 5, 6]
+
+merge_sorted_lists([[5, 1], [3], []])
+-> [1, 3, 5]
+
+merge_sorted_lists([])
+-> []

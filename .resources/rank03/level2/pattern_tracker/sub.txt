@@ -1,0 +1,32 @@
+Assignment name: pattern_tracker
+Expected files: pattern_tracker.py
+Allowed functions: standard Python built-ins only
+--------------------------------------------------------------------------------
+
+Write a function py_pattern_tracker(text: str) -> int that scans text and counts how many times a digit is immediately followed by the next consecutive digit (that is, a pair of adjacent characters where both are digits and the second digit's value is exactly one greater than the first).
+
+Overlapping pairs both count: a run of consecutive ascending digits contributes one match for each adjacent pair inside the run. Non-digit characters simply break any potential pair around them.
+
+For example:
+
+py_pattern_tracker("123")
+-> 2
+
+py_pattern_tracker("12a34")
+-> 2
+
+py_pattern_tracker("987654321")
+-> 0
+
+py_pattern_tracker("01234567")
+-> 7
+
+py_pattern_tracker("abc")
+-> 0
+
+py_pattern_tracker("1a2b3c4")
+-> 0
+
+py_pattern_tracker("112233")
+-> 2
+
