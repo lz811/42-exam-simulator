@@ -1,0 +1,23 @@
+Assignment name: mirror_matrix
+Expected files: mirror_matrix.py
+Allowed functions: standard Python built-ins only
+--------------------------------------------------------------------------------
+
+Write a function py_mirror_matrix(matrix: list[list[int]]) -> list[list[int]] that returns a new matrix where every row of the input matrix has been reversed horizontally, as if it were reflected in a mirror placed on its right edge.
+
+The number of rows and the number of columns per row are not fixed. The order of the rows themselves must not change, only the order of the elements inside each row.
+
+For example:
+
+py_mirror_matrix([[1, 2, 3], [4, 5, 6]])
+-> [[3, 2, 1], [6, 5, 4]]
+
+py_mirror_matrix([[1, 2], [3, 4], [5, 6]])
+-> [[2, 1], [4, 3], [6, 5]]
+
+py_mirror_matrix([[7]])
+-> [[7]]
+
+py_mirror_matrix([[1, 2, 3, 4]])
+-> [[4, 3, 2, 1]]
+

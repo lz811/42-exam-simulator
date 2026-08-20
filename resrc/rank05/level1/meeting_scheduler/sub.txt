@@ -1,0 +1,23 @@
+Assignment name: meeting_scheduler
+Expected files: meeting_scheduler.py
+Allowed functions: standard Python built-ins only
+--------------------------------------------------------------------------------
+
+Write a function schedule_meetings(intervals: list[tuple[int, int]]) -> tuple[int, list] that assigns each meeting (given as a (start, end) tuple) to the smallest possible number of rooms so that no two meetings assigned to the same room overlap in time.
+
+Meetings are processed in order of increasing start time. For each meeting, reuse the first existing room whose last meeting already ended (end <= start of the new meeting); otherwise open a new room. The function returns a tuple (number_of_rooms_used, rooms), where rooms is a list of lists, each inner list holding the (start, end) meetings assigned to that room in the order they were placed. An empty intervals list returns (0, []).
+
+For example:
+
+schedule_meetings([])
+-> (0, [])
+
+schedule_meetings([(1, 5)])
+-> (1, [[(1, 5)]])
+
+schedule_meetings([(1, 5), (5, 10)])
+-> (1, [[(1, 5), (5, 10)]])
+
+schedule_meetings([(1, 5), (2, 6)])
+-> (2, [[(1, 5)], [(2, 6)]])
+

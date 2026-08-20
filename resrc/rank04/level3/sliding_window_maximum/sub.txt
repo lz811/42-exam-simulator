@@ -1,0 +1,32 @@
+Assignment name  : sliding_window_maximum
+Expected files   : sliding_window_maximum.py
+Allowed functions: standard Python built-ins only
+--------------------------------------------------------------------------------------
+
+Write a function:
+
+def sliding_window_maximum(nums: list[int], k: int) -> list[int]
+
+Consider every contiguous window of exactly k elements in "nums", sliding
+one position at a time from left to right. The function must return, in
+order, the maximum value found in each of those windows.
+
+If "nums" is empty, or k is not a valid window size (k <= 0 or
+k > len(nums)), the function must return an empty result.
+
+The result can be returned as a list, or as any iterable that yields the
+same values in the same order (for example a generator).
+
+For example:
+
+sliding_window_maximum([1, 3, -1, -3, 5, 3, 6, 7], 3)
+-> [3, 3, 5, 5, 6, 7]
+
+sliding_window_maximum([], 1)
+-> []
+
+sliding_window_maximum([4, 2], 5)
+-> []
+
+sliding_window_maximum([9], 1)
+-> [9]

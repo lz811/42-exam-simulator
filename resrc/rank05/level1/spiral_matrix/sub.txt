@@ -1,0 +1,23 @@
+Assignment name: spiral_matrix
+Expected files: spiral_matrix.py
+Allowed functions: standard Python built-ins only
+--------------------------------------------------------------------------------
+
+Write a function generate_spiral(n: int) -> list[list[int]] that builds an n x n matrix filled with the integers from 1 to n*n, placed in a clockwise spiral starting from the top-left corner and spiralling inward.
+
+n is always a positive integer. For n == 1 the result is a single cell containing 1.
+
+For example:
+
+generate_spiral(1)
+-> [[1]]
+
+generate_spiral(2)
+-> [[1, 2], [4, 3]]
+
+generate_spiral(3)
+-> [[1, 2, 3], [8, 9, 4], [7, 6, 5]]
+
+generate_spiral(4)
+-> [[1, 2, 3, 4], [12, 13, 14, 5], [11, 16, 15, 6], [10, 9, 8, 7]]
+

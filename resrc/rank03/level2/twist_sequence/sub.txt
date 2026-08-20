@@ -1,0 +1,26 @@
+Assignment name: twist_sequence
+Expected files: twist_sequence.py
+Allowed functions: standard Python built-ins only
+--------------------------------------------------------------------------------
+
+Write a function py_twist_sequence(arr: list[int], k: int) -> list[int] that returns a new list where arr has been rotated to the right by k positions, so that the last k elements move to the front.
+
+k may be larger than the length of arr, in which case only k modulo the list length positions actually matter. An empty list is always returned unchanged, regardless of k.
+
+For example:
+
+py_twist_sequence([1, 2, 3, 4, 5], 2)
+-> [4, 5, 1, 2, 3]
+
+py_twist_sequence([1, 2, 3], 1)
+-> [3, 1, 2]
+
+py_twist_sequence([1, 2, 3, 4], 0)
+-> [1, 2, 3, 4]
+
+py_twist_sequence([1, 2, 3], 5)
+-> [2, 3, 1]
+
+py_twist_sequence([], 3)
+-> []
+

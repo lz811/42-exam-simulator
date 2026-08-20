@@ -1,0 +1,32 @@
+Assignment name: echo_validator
+Expected files: echo_validator.py
+Allowed functions: standard Python built-ins only
+--------------------------------------------------------------------------------
+
+Write a function py_echo_validator(text: str) -> bool that determines whether text is a palindrome once every non-alphabetic character has been stripped out and letter case is ignored.
+
+If, after filtering, no alphabetic characters remain at all, the function must return False.
+
+For example:
+
+py_echo_validator("racecar")
+-> True
+
+py_echo_validator("A man a plan a canal Panama")
+-> True
+
+py_echo_validator("race a car")
+-> False
+
+py_echo_validator("Was it a car or a cat I saw")
+-> True
+
+py_echo_validator("hello")
+-> False
+
+py_echo_validator("Madam Im Adam")
+-> True
+
+py_echo_validator("")
+-> False
+

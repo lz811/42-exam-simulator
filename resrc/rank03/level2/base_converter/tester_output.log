@@ -1,0 +1,4 @@
+./tester.sh: строка 2: ../../../main/colors.sh: Нет такого файла или каталога
+Checking base_converter implementation...
+FAIL: function py_number_base_converter not found in base_converter.py
+[31m[1mFAIL: one or more test cases failed(B[0m
