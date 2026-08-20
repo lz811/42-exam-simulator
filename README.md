@@ -2,6 +2,8 @@
 
 *A terminal that pretends to be your exam so the real one doesn't scare you.*
 
+![crazy](https://i.postimg.cc/DzCzxhrg/kotik.jpg)
+
 ## What is this
 
 A self-contained practice shell for 42 School exams. Pick a rank, get a
@@ -9,18 +11,18 @@ random subject, write code in `rendu`, type `test`, and find out — with the
 brutal honesty of a bash script — whether you're ready or not.
 
 ```
-bash launch.sh
+make
 ```
 
 ## Ranks
 
 | Rank | Status |
 |------|--------|
-| 01   | 🔜 coming soon (yes, actually, for real this time) |
+| 01   | 🔜 coming soon |
 | 02   | ✅ ready |
-| 03   | ✅ ready |
-| 04   | ✅ ready — Python edition, 4 levels, 7 subjects |
-| 05   | ✅ ready |
+| 03   | ✅ ready — Python edition,new Common Core|
+| 04   | ✅ ready — Python edition,new Common Core|
+| 05   | ✅ ready — Python edition,new Common Core|
 | 06   | ✅ ready |
 
 ## Cheats
@@ -30,7 +32,7 @@ bash launch.sh
 ## Roadmap
 
 - **Rank 01** exam — landing soon.
-- More subjects, more polish, occasional new jokes in the praise messages.
+- More subjects.
 - Whatever breaks first gets fixed first.
 
 ## Disclaimer
